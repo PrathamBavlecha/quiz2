@@ -55,6 +55,12 @@ class Quiz {
         displayPosition = displayPosition + 20
             textSize(20)
             text(allContestants[plr].name+":"+allContestants[plr].answer,120,displayPosition)
+            if(correctAns===allContestants[plr].answer){
+              text(allContestants[plr].name+"  gave the correct answer",300,displayPosition)
+            }else{
+              text(allContestants[plr].name+"  gave the incorrect answer",300,displayPosition)
+            }
+            
       }
     }
 
